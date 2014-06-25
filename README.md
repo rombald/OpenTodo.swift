@@ -7,7 +7,8 @@ Open Source ToDo App for iOS written in Swift.
 You need the latest Xcode6 beta to compile this project!
 
  1. `git clone git@github.com:rombald/OpenTodo.swift.git`
- 1. `...`
+ 1. Open `OpenToDo.xcodeproj` with Xcode
+ 1. Run `Product`->`Run`
 
 ## Storages:
 
