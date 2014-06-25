@@ -1,4 +1,22 @@
-OpenTodo.swift
-==============
+# OpenTodo.swift
 
-ToDo App with iCloud, CoreData and Trello integration. Written in Swift
+Open Source ToDo App for iOS written in Swift.
+
+## Installation Notes:
+
+You need the latest Xcode6 beta to compile this project!
+
+ 1. `git clone git@github.com:rombald/OpenTodo.swift.git`
+ 1. `...`
+
+## Storages:
+
+ - CoreData
+ - iCloud
+ - [Trello](http://trello.com)
+
+## License
+
+MIT-License
+
+See `LICENSE`-file.
