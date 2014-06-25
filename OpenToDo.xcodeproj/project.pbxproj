@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6624137195B745A008F1268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6624136195B745A008F1268 /* AppDelegate.swift */; };
+		B662413A195B745A008F1268 /* OpenToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6624138195B745A008F1268 /* OpenToDo.xcdatamodeld */; };
+		B662413C195B745A008F1268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662413B195B745A008F1268 /* ViewController.swift */; };
+		B662413F195B745A008F1268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B662413D195B745A008F1268 /* Main.storyboard */; };
+		B6624141195B745A008F1268 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6624140195B745A008F1268 /* Images.xcassets */; };
+		B662414D195B745A008F1268 /* OpenToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662414C195B745A008F1268 /* OpenToDoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6624147195B745A008F1268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6624129195B7459008F1268 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6624130195B745A008F1268;
+			remoteInfo = OpenToDo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6624131195B745A008F1268 /* OpenToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6624135195B745A008F1268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6624136195B745A008F1268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6624139195B745A008F1268 /* OpenToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenToDo.xcdatamodel; sourceTree = "<group>"; };
+		B662413B195B745A008F1268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B662413E195B745A008F1268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6624140195B745A008F1268 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6624146195B745A008F1268 /* OpenToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B662414B195B745A008F1268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B662414C195B745A008F1268 /* OpenToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenToDoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B662412E195B745A008F1268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6624143195B745A008F1268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6624128195B7459008F1268 = {
+			isa = PBXGroup;
+			children = (
+				B6624133195B745A008F1268 /* OpenToDo */,
+				B6624149195B745A008F1268 /* OpenToDoTests */,
+				B6624132195B745A008F1268 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6624132195B745A008F1268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6624131195B745A008F1268 /* OpenToDo.app */,
+				B6624146195B745A008F1268 /* OpenToDoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6624133195B745A008F1268 /* OpenToDo */ = {
+			isa = PBXGroup;
+			children = (
+				B6624136195B745A008F1268 /* AppDelegate.swift */,
+				B662413B195B745A008F1268 /* ViewController.swift */,
+				B662413D195B745A008F1268 /* Main.storyboard */,
+				B6624140195B745A008F1268 /* Images.xcassets */,
+				B6624138195B745A008F1268 /* OpenToDo.xcdatamodeld */,
+				B6624134195B745A008F1268 /* Supporting Files */,
+			);
+			path = OpenToDo;
+			sourceTree = "<group>";
+		};
+		B6624134195B745A008F1268 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6624135195B745A008F1268 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6624149195B745A008F1268 /* OpenToDoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B662414C195B745A008F1268 /* OpenToDoTests.swift */,
+				B662414A195B745A008F1268 /* Supporting Files */,
+			);
+			path = OpenToDoTests;
+			sourceTree = "<group>";
+		};
+		B662414A195B745A008F1268 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B662414B195B745A008F1268 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6624130195B745A008F1268 /* OpenToDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6624150195B745A008F1268 /* Build configuration list for PBXNativeTarget "OpenToDo" */;
+			buildPhases = (
+				B662412D195B745A008F1268 /* Sources */,
+				B662412E195B745A008F1268 /* Frameworks */,
+				B662412F195B745A008F1268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenToDo;
+			productName = OpenToDo;
+			productReference = B6624131195B745A008F1268 /* OpenToDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6624145195B745A008F1268 /* OpenToDoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6624153195B745A008F1268 /* Build configuration list for PBXNativeTarget "OpenToDoTests" */;
+			buildPhases = (
+				B6624142195B745A008F1268 /* Sources */,
+				B6624143195B745A008F1268 /* Frameworks */,
+				B6624144195B745A008F1268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6624148195B745A008F1268 /* PBXTargetDependency */,
+			);
+			name = OpenToDoTests;
+			productName = OpenToDoTests;
+			productReference = B6624146195B745A008F1268 /* OpenToDoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6624129195B7459008F1268 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Frank Münchmeyer";
+				TargetAttributes = {
+					B6624130195B745A008F1268 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					B6624145195B745A008F1268 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = B6624130195B745A008F1268;
+					};
+				};
+			};
+			buildConfigurationList = B662412C195B7459008F1268 /* Build configuration list for PBXProject "OpenToDo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6624128195B7459008F1268;
+			productRefGroup = B6624132195B745A008F1268 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6624130195B745A008F1268 /* OpenToDo */,
+				B6624145195B745A008F1268 /* OpenToDoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B662412F195B745A008F1268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B662413F195B745A008F1268 /* Main.storyboard in Resources */,
+				B6624141195B745A008F1268 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6624144195B745A008F1268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B662412D195B745A008F1268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B662413C195B745A008F1268 /* ViewController.swift in Sources */,
+				B6624137195B745A008F1268 /* AppDelegate.swift in Sources */,
+				B662413A195B745A008F1268 /* OpenToDo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6624142195B745A008F1268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B662414D195B745A008F1268 /* OpenToDoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6624148195B745A008F1268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6624130195B745A008F1268 /* OpenToDo */;
+			targetProxy = B6624147195B745A008F1268 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B662413D195B745A008F1268 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B662413E195B745A008F1268 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B662414E195B745A008F1268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B662414F195B745A008F1268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6624151195B745A008F1268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = OpenToDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6624152195B745A008F1268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = OpenToDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6624154195B745A008F1268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenToDo.app/OpenToDo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OpenToDoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		B6624155195B745A008F1268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenToDo.app/OpenToDo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OpenToDoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B662412C195B7459008F1268 /* Build configuration list for PBXProject "OpenToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B662414E195B745A008F1268 /* Debug */,
+				B662414F195B745A008F1268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6624150195B745A008F1268 /* Build configuration list for PBXNativeTarget "OpenToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6624151195B745A008F1268 /* Debug */,
+				B6624152195B745A008F1268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6624153195B745A008F1268 /* Build configuration list for PBXNativeTarget "OpenToDoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6624154195B745A008F1268 /* Debug */,
+				B6624155195B745A008F1268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6624138195B745A008F1268 /* OpenToDo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6624139195B745A008F1268 /* OpenToDo.xcdatamodel */,
+			);
+			currentVersion = B6624139195B745A008F1268 /* OpenToDo.xcdatamodel */;
+			path = OpenToDo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B6624129195B7459008F1268 /* Project object */;
+}
