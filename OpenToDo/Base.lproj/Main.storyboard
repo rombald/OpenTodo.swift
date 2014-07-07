@@ -55,7 +55,7 @@
             </objects>
             <point key="canvasLocation" x="1083" y="952"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller - [Storage Name] ToDo's-->
         <scene sceneID="d73-ld-GU6">
             <objects>
                 <tableViewController id="I7v-3z-wUj" sceneMemberID="viewController">
@@ -70,6 +70,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fgs-HD-bFf" id="0bL-4r-4fl">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="4Jj-TF-aAr" kind="show" id="pDx-3o-wy4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -77,10 +80,31 @@
                             <outlet property="delegate" destination="I7v-3z-wUj" id="3gq-nK-4bc"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="[Storage Name] ToDo's" id="bjv-hg-H7R"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UBa-oV-dx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1639" y="952"/>
+        </scene>
+        <!--View Controller - [ToDo Title]-->
+        <scene sceneID="e0t-pe-gzT">
+            <objects>
+                <viewController id="4Jj-TF-aAr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TSr-l1-kSQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1FS-f5-hmm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lZa-pv-MaJ">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="[ToDo Title]" id="xka-R2-iQl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycs-0D-qT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237" y="952"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tnq-px-aDc">
