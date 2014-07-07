@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVO-7V-Wpo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - Select Storage-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="OpenToDo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,114 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWw-zX-IJh">
+                                <rect key="frame" x="208" y="123" width="65" height="30"/>
+                                <state key="normal" title="CoreData">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="I7v-3z-wUj" kind="show" id="6HB-mq-LkW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZz-FP-zSA">
+                                <rect key="frame" x="218" y="225" width="45" height="30"/>
+                                <state key="normal" title="iCloud">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hd-cF-zTE">
+                                <rect key="frame" x="222" y="336" width="37" height="30"/>
+                                <state key="normal" title="Trello">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tZz-FP-zSA" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="81W-Ee-cEA"/>
+                            <constraint firstItem="VWw-zX-IJh" firstAttribute="centerX" secondItem="tZz-FP-zSA" secondAttribute="centerX" id="9bQ-gQ-RzY"/>
+                            <constraint firstItem="4Hd-cF-zTE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="VrK-Qz-kYE"/>
+                            <constraint firstItem="4Hd-cF-zTE" firstAttribute="top" secondItem="tZz-FP-zSA" secondAttribute="bottom" constant="81" id="ZRG-RC-tdi"/>
+                            <constraint firstItem="VWw-zX-IJh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="59" id="c3z-ep-gxh"/>
+                            <constraint firstItem="tZz-FP-zSA" firstAttribute="centerX" secondItem="4Hd-cF-zTE" secondAttribute="centerX" id="f0D-3a-IYK"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Select Storage" id="KGi-Wm-o4H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1083" y="952"/>
+        </scene>
+        <!--Table View Controller - [Storage Name] ToDo's-->
+        <scene sceneID="d73-ld-GU6">
+            <objects>
+                <tableViewController id="I7v-3z-wUj" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cs9-zw-D2D">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" id="Fgs-HD-bFf">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fgs-HD-bFf" id="0bL-4r-4fl">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="4Jj-TF-aAr" kind="show" id="pDx-3o-wy4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I7v-3z-wUj" id="fvz-2F-2W7"/>
+                            <outlet property="delegate" destination="I7v-3z-wUj" id="3gq-nK-4bc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="[Storage Name] ToDo's" id="bjv-hg-H7R"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBa-oV-dx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="952"/>
+        </scene>
+        <!--View Controller - [ToDo Title]-->
+        <scene sceneID="e0t-pe-gzT">
+            <objects>
+                <viewController id="4Jj-TF-aAr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TSr-l1-kSQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1FS-f5-hmm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lZa-pv-MaJ">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="[ToDo Title]" id="xka-R2-iQl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycs-0D-qT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237" y="952"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tnq-px-aDc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LVO-7V-Wpo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mdh-Pw-1Pu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="zcL-rN-Vda"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjP-KM-9TB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="952"/>
         </scene>
     </scenes>
 </document>
